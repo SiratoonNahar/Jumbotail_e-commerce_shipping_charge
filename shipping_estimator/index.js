@@ -1,6 +1,5 @@
 const express=require('express');
 const {mongoConnection}=require('./config/mongodbConnection')
-const calculateDistance = require('./utils/calculateDistance')
 const {warehouserouter} = require('./routes/warehouse.route')
 require('dotenv').config();
 
@@ -24,3 +23,4 @@ app.listen(PORT,async()=>{
 
     }
 })
+
